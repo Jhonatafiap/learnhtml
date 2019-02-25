@@ -147,6 +147,7 @@ footer p {
 		height: 40px;
 		position: relative;
 		margin-left: 20px;
+		z-index: 10;
 	}
 	.hamburguer span {
 		display: block;
@@ -184,8 +185,14 @@ footer p {
 		background-color: blueviolet;
 		transition: all 300ms ease;
 		transform: translateX(-100%);
+		top: 0;
+		left: 0;
 	}
 
+	header nav.is--active {
+		transform: translateX(0);
+	}
+	
 	.destaque h2 {
 		font-size: 28px;
 	}
