@@ -167,6 +167,16 @@ footer p {
 	.hamburguer span:nth-child(3) {
 		top: 75%;
 	}
+	.hamburguer.is--active span:nth-child(1) {
+		transform: rotate(45deg);
+	}
+	.hamburguer.is--active span:nth-child(2) {
+		transform: rotate(-45deg);
+		top: 27%;
+	}
+	.hamburguer.is--active span:nth-child(3) {
+		opacity: 0;
+	}
 
 	article blockquote {
 		width: 100%;
@@ -192,8 +202,15 @@ footer p {
 	header nav.is--active {
 		transform: translateX(0);
 	}
-	
+
 	.destaque h2 {
 		font-size: 28px;
+	}
+	header ul {
+		flex-direction: column;
+		padding-top: 90px;
+	} 
+	header ul li {
+		margin: 10px 0;
 	}
 }
